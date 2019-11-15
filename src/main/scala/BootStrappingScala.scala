@@ -29,8 +29,6 @@ object BootStrapping extends App {
 
     sc.setLogLevel("WARN")
 
-    // Exploring SparkSQL
-    // Initialize an SQLContext
     val sqlContext = new org.apache.spark.sql.SQLContext(sc)
     import sqlContext.implicits._
 
